@@ -10,18 +10,18 @@ try{var _t=localStorage.getItem("stack-longevity-theme");if(_t==="light"||_t==="
 </script>
 <style>
 :root{
-  --bg0:#0a0d06; --bg1:#12170a;
-  --ink:#f4f9ed; --muted:#bdc9a9; --faint:#97a57f;
-  --sky:#fb7185; --sky-deep:#f50729;
-  --teal:#a3e635; --teal-deep:#669813;
-  --org:#a3e635; --org-deep:#669813;
-  --amber:#fb7185; --rose:#a3e635; --cyan:#fb7185;
-  --card:#19200d; --card2:#222b12;
+  --bg0:#06070d; --bg1:#0a0c17;
+  --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
+  --sky:#FDE047; --sky-deep:#0891B2;
+  --teal:#0891B2; --teal-deep:#312E81;
+  --org:#0891B2; --org-deep:#312E81;
+  --amber:#fbbf24; --rose:#fb7185; --cyan:#FDE047;
+  --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#fa4a63 5%,#72b208 50%,#62812e 95%);
-  --ongrad:#10140a;
+  --grad:linear-gradient(100deg,#FDE047 5%,#0891B2 50%,#312E81 95%);
+  --ongrad:#0a0c14;
   --radius:18px;
-  --acc1:#fa4a63;--acc2:#72b208;--acc3:#62812e;
+  --acc1:#FDE047;--acc2:#0891B2;--acc3:#312E81;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
   --disp:"Avenir Next","Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,sans-serif;
 }
@@ -31,15 +31,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(114,178,8,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(98,129,46,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(79,124,5,0.192), transparent 62%),
+    radial-gradient(900px 620px at 12% -6%, rgba(8,145,178,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(49,46,129,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(5,101,124,0.192), transparent 62%),
     radial-gradient(700px 500px at 78% 78%, rgba(251,113,133,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(114,178,8,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(98,129,46,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(79,124,5,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(8,145,178,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(49,46,129,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(5,101,124,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -61,20 +61,20 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 #themeToggle .tt-opt svg{width:15px;height:15px}
 #themeToggle .tt-opt:hover{color:var(--ink)}
 #themeToggle .tt-opt:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
-#themeToggle .tt-opt.active{background:var(--grad);color:#10140a}
+#themeToggle .tt-opt.active{background:var(--grad);color:#0a0c14}
 @media(max-width:720px){#themeToggle{top:66px}}
 [data-theme="dark"]{color-scheme:dark}
 /* soft neutral gray light theme — never stark white */
 [data-theme="light"]{
-  --bg0:#f0e8e9; --bg1:#f6eeef;
-  --ink:#361b1f; --muted:#714d52; --faint:#937075;
-  --sky:#f90d2f; --sky-deep:#920418;
-  --teal:#6da60f; --teal-deep:#293f06;
-  --org:#f90d2f; --org-deep:#920418;
-  --amber:#f90d2f; --rose:#6da60f; --cyan:#f90d2f;
-  --card:#fafcf8; --card2:#eff3e9;
-  --line:rgba(42,15,19,.14);
-  --grad:linear-gradient(100deg,#b20820,#812e3a,#b20820);
+  --bg0:#e8ebf0; --bg1:#eef1f6;
+  --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
+  --sky:#0891B2; --sky-deep:#312E81;
+  --teal:#056880; --teal-deep:#045467;
+  --org:#0891B2; --org-deep:#312E81;
+  --amber:#b45309; --rose:#e11d48; --cyan:#045467;
+  --card:#f8fafc; --card2:#e9edf3;
+  --line:rgba(15,23,42,.14);
+  --grad:linear-gradient(100deg,#0891B2,#312E81,#0891B2);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -84,13 +84,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"] .orb{opacity:.5}
 [data-theme="light"] #dots{opacity:.55}
 [data-theme="light"] .bg-grad{opacity:.55}
-nav.chapters{position:sticky;top:0;z-index:50;background:rgba(10,13,6,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav.chapters{position:sticky;top:0;z-index:50;background:rgba(6,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav.chapters .rail{max-width:1280px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
 nav.chapters .rail::-webkit-scrollbar{display:none}
 nav.chapters a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:600;
   letter-spacing:.04em;padding:.42rem .8rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:all .25s ease}
 nav.chapters a:hover{color:var(--ink);border-color:rgba(255,255,255,.25)}
-nav.chapters a.active{color:#10140a;background:var(--grad);border-color:transparent}
+nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transparent}
 .toc{display:none}
 @media(min-width:1200px){
   nav.chapters{display:none}
@@ -98,7 +98,7 @@ nav.chapters a.active{color:#10140a;background:var(--grad);border-color:transpar
   .toc{display:flex;position:fixed;left:0;top:0;bottom:0;width:248px;z-index:45;
     flex-direction:column;justify-content:center;gap:.2rem;
     padding:2rem 1.1rem 2rem 1.4rem;
-    background:rgba(10,13,6,.72);backdrop-filter:blur(14px);border-right:1px solid var(--line)}
+    background:rgba(6,7,13,.72);backdrop-filter:blur(14px);border-right:1px solid var(--line)}
   .toc .brand{font-family:var(--disp);font-weight:800;font-size:.98rem;letter-spacing:-.01em;
     margin-bottom:1.2rem;line-height:1.35;color:var(--ink);
     text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
@@ -125,7 +125,7 @@ section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
 .eyebrow .n{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:10px;
-  background:var(--grad);color:#10140a;font-size:.85rem;letter-spacing:0}
+  background:var(--grad);color:#0a0c14;font-size:.85rem;letter-spacing:0}
 h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-bottom:1rem}
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
@@ -134,8 +134,8 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(249,38,68,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(249,38,68,.55)}70%{box-shadow:0 0 0 12px rgba(249,38,68,0)}100%{box-shadow:0 0 0 0 rgba(249,38,68,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -145,7 +145,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .quickread{max-width:46rem;margin:0 auto;text-align:left;background:rgba(255,255,255,.035);
   border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem 1.5rem;display:flex;gap:1rem;align-items:flex-start}
 .quickread .tag{flex:0 0 auto;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
-  background:var(--grad);color:#10140a;border-radius:8px;padding:.35rem .7rem;margin-top:.2rem}
+  background:var(--grad);color:#0a0c14;border-radius:8px;padding:.35rem .7rem;margin-top:.2rem}
 .quickread p{color:var(--muted);font-size:.98rem}
 .quickread p strong{color:var(--ink)}
 .hero-stats{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.4rem}
@@ -186,13 +186,13 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .kv:first-of-type{border-top:none}
 .kv .k{flex:0 0 auto;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
-.kv .k.s{background:rgba(205,252,127,.12);color:var(--sky);border:1px solid rgba(205,252,127,.35)}
-.kv .k.t{background:rgba(181,234,94,.10);color:var(--teal);border:1px solid rgba(181,234,94,.35)}
-.kv .k.o{background:rgba(250,61,88,.12);color:var(--org);border:1px solid rgba(250,61,88,.35)}
-.kv .k.a{background:rgba(249,38,68,.12);color:var(--amber);border:1px solid rgba(249,38,68,.35)}
+.kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
+.kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
+.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
+.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
 .kv .k.g{background:rgba(251,113,133,.12);color:var(--rose);border:1px solid rgba(251,113,133,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(114,178,8,.10),transparent 70%),#101509;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(8,145,178,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -216,7 +216,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(249,38,68,.4);background:rgba(249,38,68,.08);
+  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -232,7 +232,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(249,38,68,.06);border:1px solid rgba(249,38,68,.3);border-radius:var(--radius);
+.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -243,8 +243,8 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(249,38,68,.1);color:var(--amber);border:1px solid rgba(249,38,68,.4)}
-.lvl-theory .level{background:rgba(250,61,88,.1);color:var(--org);border:1px solid rgba(250,61,88,.4)}
+.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
+.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
 .lvl-unknown .level{background:rgba(251,113,133,.1);color:var(--rose);border:1px solid rgba(251,113,133,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
@@ -257,7 +257,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .g-item:nth-child(3n) .g-q .term{color:var(--org)}
 .g-q .plus{flex:0 0 auto;width:1.7rem;height:1.7rem;border-radius:50%;border:1px solid var(--line);margin-left:auto;
   display:inline-flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--muted);transition:all .3s}
-.g-item.open .g-q .plus{transform:rotate(45deg);background:var(--grad);color:#10140a;border-color:transparent}
+.g-item.open .g-q .plus{transform:rotate(45deg);background:var(--grad);color:#0a0c14;border-color:transparent}
 .gthumb{flex:0 0 auto;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);
   animation:gaFloat 5s ease-in-out infinite}
 .gthumb.v2{animation:gaBreathe 4.4s ease-in-out infinite}
@@ -341,7 +341,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 @media(max-width:720px){.duo{grid-template-columns:1fr}}
 .do,.dont{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;position:relative;overflow:hidden}
 .do::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--teal-deep),var(--teal))}
-.dont::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,#5a7f1d,var(--rose))}
+.dont::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,#7f1d1d,var(--rose))}
 .do h4,.dont h4{font-family:var(--disp);font-size:1.15rem;font-weight:800;margin-bottom:.7rem}
 .vs-h3{font-family:var(--disp);margin:2rem 0 1rem;font-size:1.15rem;font-weight:800;color:var(--ink)}
 .do h4{color:var(--teal)}
@@ -373,8 +373,8 @@ mini-poll { display: block; }
   border: 1px solid transparent;
   border-radius: 18px;
   background:
-    linear-gradient(var(--card, #19200d), var(--card, #19200d)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fb7689), var(--mpc2, #a3e635)) border-box;
+    linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
+    linear-gradient(135deg, var(--mpc1, #fdba74), var(--mpc2, #a3e635)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -383,14 +383,14 @@ mini-poll { display: block; }
   display: flex; align-items: center; gap: .6rem;
   width: 100%; cursor: pointer; text-align: left;
   padding: .75rem 1rem; border: 0; background: transparent;
-  color: var(--muted, #bdc9a9); font-size: .88rem;
+  color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #f92644); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fb7689);
-  box-shadow: 0 0 10px var(--mpc1, #fb7689);
+  background: var(--mpc1, #fdba74);
+  box-shadow: 0 0 10px var(--mpc1, #fdba74);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +398,7 @@ mini-poll { display: block; }
   flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .mpoll-teaser-chev {
-  flex: 0 0 auto; transition: transform .2s; color: var(--faint, #97a57f);
+  flex: 0 0 auto; transition: transform .2s; color: var(--faint, #7f88a5);
 }
 .mpoll.open .mpoll-teaser-chev { transform: rotate(180deg); }
 /* animated expand/collapse */
@@ -416,25 +416,25 @@ mini-poll { display: block; }
 .mpoll.open .mpoll-body { opacity: 1; transform: translateY(0); }
 .mpoll-kicker {
   font-size: .78rem; font-weight: 800; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--muted, #bdc9a9);
+  text-transform: uppercase; color: var(--muted, #a9b1c9);
   margin-bottom: .6rem;
 }
 /* single top-of-page banner (preview mode only) */
 .mpoll-topbanner {
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
-  border-radius: 999px; font-size: .82rem; font-weight: 700; color: #10140a;
-  background: linear-gradient(100deg, var(--acc1, #fb7689), var(--acc2, #a3e635), var(--acc3, #fa3d58));
+  border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
+  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: #10140a;
+  background: #0a0c14;
   animation: mpulse 2.4s ease-in-out infinite;
 }
 .mpoll-field { border: 0; margin: 0; padding: 0; }
 .mpoll-q {
   font-size: 1.12rem; font-weight: 800; line-height: 1.35;
-  color: var(--ink, #f4f9ed); margin-bottom: .9rem; padding: 0;
+  color: var(--ink, #edf0f9); margin-bottom: .9rem; padding: 0;
 }
 .mpoll-opts { display: grid; gap: .55rem; }
 .mpoll-opt {
@@ -442,55 +442,55 @@ mini-poll { display: block; }
   width: 100%; text-align: left; cursor: pointer;
   padding: .72rem .9rem; border-radius: 12px;
   border: 1px solid var(--line, rgba(255,255,255,.09));
-  background: rgba(255,255,255,.03); color: var(--ink, #f4f9ed);
+  background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #f92644); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #f92644); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #f92644); background: rgba(249,38,68,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
-  font-size: 1rem; font-weight: 800; color: #10140a;
-  background: linear-gradient(100deg, var(--acc1, #fb7689), var(--acc2, #a3e635));
+  font-size: 1rem; font-weight: 800; color: #0a0c14;
+  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #f92644;
-  border: 1px dashed rgba(249,38,68,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
+  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
   display: flex; justify-content: space-between; gap: .8rem;
-  font-size: .9rem; color: var(--ink, #f4f9ed); margin-bottom: .28rem;
+  font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
-.mpoll-pct { font-weight: 800; color: var(--muted, #bdc9a9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #f92644); font-weight: 700; font-size: .8rem; }
+.mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
+.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fb7689), var(--acc2, #a3e635), var(--acc3, #fa3d58));
+  background: linear-gradient(90deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(249,38,68,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
 .mpoll-total {
-  margin-top: .8rem; font-size: .85rem; color: var(--faint, #97a57f);
+  margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
-.mpoll-sub { margin-top: .8rem; font-size: .9rem; color: var(--muted, #bdc9a9); }
-.mpoll-count { font-weight: 800; color: var(--ink, #f4f9ed); font-variant-numeric: tabular-nums; }
+.mpoll-sub { margin-top: .8rem; font-size: .9rem; color: var(--muted, #a9b1c9); }
+.mpoll-count { font-weight: 800; color: var(--ink, #edf0f9); font-variant-numeric: tabular-nums; }
 .mpoll-disc {
   margin-top: .9rem; padding-top: .7rem;
   border-top: 1px dashed var(--line, rgba(255,255,255,.09));
-  font-size: .76rem; line-height: 1.5; color: var(--faint, #97a57f);
+  font-size: .76rem; line-height: 1.5; color: var(--faint, #7f88a5);
 }
-.mpoll-loading { color: var(--faint, #97a57f); font-size: .9rem; padding: .6rem 0; }
+.mpoll-loading { color: var(--faint, #7f88a5); font-size: .9rem; padding: .6rem 0; }
 @media (prefers-reduced-motion: reduce) {
   .mpoll-opt, .mpoll-vote, .mpoll-again, .mpoll-fill, .mpoll-teaser-chev,
   .mpoll-bodywrap, .mpoll-body { transition: none; }
@@ -508,13 +508,31 @@ mini-poll { display: block; }
 #dots{overflow:hidden}
 .kv .k{flex:0 1 auto}
 .kv p{min-width:0}
+
+#bgtext{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.bgline{position:absolute;left:-25%;width:150%;transform:rotate(-20deg)}
+.bgtrack{display:inline-block;white-space:nowrap;animation:wmdrift var(--spd,120s) linear infinite}
+.bgline.rev .bgtrack{animation-direction:reverse}
+.bgtrack b{font-weight:900;letter-spacing:.04em;color:transparent;
+  -webkit-text-stroke:1px var(--sc,rgba(251,191,36,.13))}
+.bgtrack i{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(152,164,192,.10);margin:0 .7em}
+.w1{--sc:rgba(251,191,36,.13)}
+.w2{--sc:rgba(253,224,71,.12)}
+@keyframes wmdrift{to{transform:translateX(-50%)}}
+@media(max-width:900px){ .bgline.mhide{display:none} }
+@media (prefers-reduced-motion:reduce){ .bgtrack{animation:none} }
+
+#bg-dots-svg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+[data-theme="light"] #bg-dots-svg{opacity:.7}
 </style>
 </head>
 <body>
+<svg id="bg-dots-svg" aria-hidden="true"></svg>
+<div id="bgtext" aria-hidden="true"><div class="bgline" style="top:4%;font-size:6rem;--spd:138s"><div class="bgtrack"><span><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span><span aria-hidden="true"><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span></div></div><div class="bgline rev" style="top:22%;font-size:3.2rem;--spd:106s"><div class="bgtrack"><span><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span><span aria-hidden="true"><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span></div></div><div class="bgline" style="top:40%;font-size:7rem;--spd:162s"><div class="bgtrack"><span><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span><span aria-hidden="true"><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span></div></div><div class="bgline rev mhide" style="top:58%;font-size:2.8rem;--spd:119s"><div class="bgtrack"><span><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span><span aria-hidden="true"><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span></div></div><div class="bgline mhide" style="top:76%;font-size:6rem;--spd:150s"><div class="bgtrack"><span><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span><span aria-hidden="true"><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span></div></div><div class="bgline rev mhide" style="top:90%;font-size:3rem;--spd:100s"><div class="bgtrack"><span><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span><span aria-hidden="true"><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i><b class="w1">PUSHING</b><i>·</i><b class="w2">P</b><i>·</i></span></div></div></div>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fa4a63"/><stop offset="50%" stop-color="#72b208"/><stop offset="100%" stop-color="#62812e"/>
+      <stop offset="0%" stop-color="#FDE047"/><stop offset="50%" stop-color="#0891B2"/><stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
   </defs>
 </svg>
@@ -594,7 +612,7 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">02</span>Origins</span>
   <h2>Where the <span class="hl">longevity dream</span> came from</h2>
   <p class="lede">Two of these peptides come from a <strong>Soviet-era aging research program</strong>; the third from a 2015 mitochondrial discovery. The longevity framing came much later — from the internet.</p>
-<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Timeline"><line x1="40" y1="110" x2="600" y2="110" stroke="#52603a" stroke-width="3" class="flowseq"/><circle cx="70" cy="110" r="26" fill="none" stroke="#fa4a63" stroke-width="2" class="ringp"/><circle cx="70" cy="110" r="13" fill="#fa4a63"/><text x="70" y="60" fill="#fa4a63" font-size="13" font-weight="800" text-anchor="middle">1970s</text><text x="70" y="160" fill="#bdc9a9" font-size="11.5" font-weight="700" text-anchor="middle">Bioregulator program</text><text x="70" y="178" fill="#97a57f" font-size="10.5" text-anchor="middle">St. Petersburg institute studies short peptides and aging</text><circle cx="195" cy="110" r="26" fill="none" stroke="#72b208" stroke-width="2" class="ringp"/><circle cx="195" cy="110" r="13" fill="#72b208"/><text x="195" y="60" fill="#72b208" font-size="13" font-weight="800" text-anchor="middle">2003</text><text x="195" y="160" fill="#bdc9a9" font-size="11.5" font-weight="700" text-anchor="middle">Telomerase report</text><text x="195" y="178" fill="#97a57f" font-size="10.5" text-anchor="middle">Epitalon reported to activate telomerase in cell culture</text><circle cx="320" cy="110" r="26" fill="none" stroke="#cbf881" stroke-width="2" class="ringp"/><circle cx="320" cy="110" r="13" fill="#cbf881"/><text x="320" y="60" fill="#cbf881" font-size="13" font-weight="800" text-anchor="middle">2015</text><text x="320" y="160" fill="#bdc9a9" font-size="11.5" font-weight="700" text-anchor="middle">MOTS-C paper</text><text x="320" y="178" fill="#97a57f" font-size="10.5" text-anchor="middle">Mitochondrial peptide shows metabolic benefits in mice</text><circle cx="445" cy="110" r="26" fill="none" stroke="#72b208" stroke-width="2" class="ringp"/><circle cx="445" cy="110" r="13" fill="#72b208"/><text x="445" y="60" fill="#72b208" font-size="13" font-weight="800" text-anchor="middle">2010s</text><text x="445" y="160" fill="#bdc9a9" font-size="11.5" font-weight="700" text-anchor="middle">Forum synthesis</text><text x="445" y="178" fill="#97a57f" font-size="10.5" text-anchor="middle">Longevity forums bundle the three into a 'stack'</text><circle cx="570" cy="110" r="26" fill="none" stroke="#fa4a63" stroke-width="2" class="ringp"/><circle cx="570" cy="110" r="13" fill="#fa4a63"/><text x="570" y="60" fill="#fa4a63" font-size="13" font-weight="800" text-anchor="middle">Now</text><text x="570" y="160" fill="#bdc9a9" font-size="11.5" font-weight="700" text-anchor="middle">Clinic menus</text><text x="570" y="178" fill="#97a57f" font-size="10.5" text-anchor="middle">Sold as longevity protocols; human trials: none</text></svg><div class="cap">Decades of niche research, then the internet made it a protocol.</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Timeline"><line x1="40" y1="110" x2="600" y2="110" stroke="#3a4160" stroke-width="3" class="flowseq"/><circle cx="70" cy="110" r="26" fill="none" stroke="#FDE047" stroke-width="2" class="ringp"/><circle cx="70" cy="110" r="13" fill="#FDE047"/><text x="70" y="60" fill="#FDE047" font-size="13" font-weight="800" text-anchor="middle">1970s</text><text x="70" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Bioregulator program</text><text x="70" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">St. Petersburg institute studies short peptides and aging</text><circle cx="195" cy="110" r="26" fill="none" stroke="#0891B2" stroke-width="2" class="ringp"/><circle cx="195" cy="110" r="13" fill="#0891B2"/><text x="195" y="60" fill="#0891B2" font-size="13" font-weight="800" text-anchor="middle">2003</text><text x="195" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Telomerase report</text><text x="195" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Epitalon reported to activate telomerase in cell culture</text><circle cx="320" cy="110" r="26" fill="none" stroke="#818cf8" stroke-width="2" class="ringp"/><circle cx="320" cy="110" r="13" fill="#818cf8"/><text x="320" y="60" fill="#818cf8" font-size="13" font-weight="800" text-anchor="middle">2015</text><text x="320" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">MOTS-C paper</text><text x="320" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Mitochondrial peptide shows metabolic benefits in mice</text><circle cx="445" cy="110" r="26" fill="none" stroke="#0891B2" stroke-width="2" class="ringp"/><circle cx="445" cy="110" r="13" fill="#0891B2"/><text x="445" y="60" fill="#0891B2" font-size="13" font-weight="800" text-anchor="middle">2010s</text><text x="445" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Forum synthesis</text><text x="445" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Longevity forums bundle the three into a 'stack'</text><circle cx="570" cy="110" r="26" fill="none" stroke="#FDE047" stroke-width="2" class="ringp"/><circle cx="570" cy="110" r="13" fill="#FDE047"/><text x="570" y="60" fill="#FDE047" font-size="13" font-weight="800" text-anchor="middle">Now</text><text x="570" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Clinic menus</text><text x="570" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Sold as longevity protocols; human trials: none</text></svg><div class="cap">Decades of niche research, then the internet made it a protocol.</div></div>
 <div class="kv reveal"><span class="k s">The bioregulator lineage</span><p>Epitalon and Pinealon come from a decades-long Russian program studying <strong>short 'bioregulator' peptides</strong> — an evidence tradition largely separate from Western drug development, with small studies and big claims.</p></div>
 <div class="kv reveal"><span class="k t">The telomerase moment</span><p>The 2003 cell-culture finding — telomerase activity and longer telomeres in fibroblasts — is <strong>the single result</strong> the entire Epitalon longevity reputation rests on. One study, in dishes, twenty-plus years ago.</p></div>
 <div class="kv reveal"><span class="k o">The stack is forum-made</span><p>No researcher proposed this trio. <strong>Forums assembled it</strong> from three 'hallmarks of aging' marketing angles — telomeres, brain, metabolism — into one shopping list.</p></div>
@@ -609,11 +627,11 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">03</span>Three theories</span>
   <h2>The three <span class="hl">anti-aging theories</span></h2>
   <p class="lede">Each peptide maps to a famous aging theory. Here's the proposed chain for each — and how far each link actually reaches.</p>
-<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Four-step mechanism diagram"><g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#2a3615" stroke="#fa4a63" stroke-width="2"/><text x="84" y="105" fill="#fa4a63">1 · TELOMERES</text><text x="84" y="130" fill="#bdc9a9" font-size="11" font-weight="600">Epitalon nudges</text><text x="84" y="146" fill="#bdc9a9" font-size="11" font-weight="600">telomerase in cells</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#2a3615" stroke="#72b208" stroke-width="2"/><text x="236" y="105" fill="#72b208">2 · NEURONS</text><text x="236" y="130" fill="#bdc9a9" font-size="11" font-weight="600">Pinealon shields</text><text x="236" y="146" fill="#bdc9a9" font-size="11" font-weight="600">brain cells in animals</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#2a3615" stroke="#fa4a63" stroke-width="2"/><text x="388" y="105" fill="#fa4a63">3 · METABOLISM</text><text x="388" y="130" fill="#bdc9a9" font-size="11" font-weight="600">MOTS-C flips</text><text x="388" y="146" fill="#bdc9a9" font-size="11" font-weight="600">AMPK in mice</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#2a3615" stroke="#72b208" stroke-width="2"/><text x="540" y="105" fill="#72b208">4 · LONGEVITY?</text><text x="540" y="130" fill="#bdc9a9" font-size="11" font-weight="600">Stack slows aging</text><text x="540" y="146" fill="#bdc9a9" font-size="11" font-weight="600">claimed — never tested</text></g><g stroke="#97a57f" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g></svg><div class="cap">Three theories, one leap: telomeres → neurons → metabolism → longevity(?). The last arrow is pure hope.</div></div>
-<div class="ebar"><div class="row"><span class="t">Epitalon telomerase (cell culture)</span><span class="v">one famous study</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#72b208,#fa4a63)"></div></div><div class="note">Telomerase activation reported in human fibroblasts, 2003. Never replicated at scale; no human telomere-length trial.</div></div>
-<div class="ebar"><div class="row"><span class="t">Pinealon neuroprotection (animals)</span><span class="v">early models</span></div><div class="track"><div class="fill" style="--w:30%;background:linear-gradient(90deg,#72b208,#fa4a63)"></div></div><div class="note">Protective signals in rodent brain-injury and cell models. No human efficacy data.</div></div>
-<div class="ebar"><div class="row"><span class="t">MOTS-C metabolism (mice)</span><span class="v">solid preclinical</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#62812e,#72b208)"></div></div><div class="note">Real metabolic effects in mice; human data limited to correlations. No efficacy trials.</div></div>
-<div class="ebar"><div class="row"><span class="t">Stack extends healthspan/lifespan</span><span class="v">no data</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#52603a,#52603a)"></div></div><div class="note">No animal lifespan study, no human trial of the combination — or of any member for longevity.</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Four-step mechanism diagram"><g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#FDE047" stroke-width="2"/><text x="84" y="105" fill="#FDE047">1 · TELOMERES</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Epitalon nudges</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">telomerase in cells</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0891B2" stroke-width="2"/><text x="236" y="105" fill="#0891B2">2 · NEURONS</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Pinealon shields</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">brain cells in animals</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#FDE047" stroke-width="2"/><text x="388" y="105" fill="#FDE047">3 · METABOLISM</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">MOTS-C flips</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">AMPK in mice</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0891B2" stroke-width="2"/><text x="540" y="105" fill="#0891B2">4 · LONGEVITY?</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Stack slows aging</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">claimed — never tested</text></g><g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g></svg><div class="cap">Three theories, one leap: telomeres → neurons → metabolism → longevity(?). The last arrow is pure hope.</div></div>
+<div class="ebar"><div class="row"><span class="t">Epitalon telomerase (cell culture)</span><span class="v">one famous study</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#0891B2,#FDE047)"></div></div><div class="note">Telomerase activation reported in human fibroblasts, 2003. Never replicated at scale; no human telomere-length trial.</div></div>
+<div class="ebar"><div class="row"><span class="t">Pinealon neuroprotection (animals)</span><span class="v">early models</span></div><div class="track"><div class="fill" style="--w:30%;background:linear-gradient(90deg,#0891B2,#FDE047)"></div></div><div class="note">Protective signals in rodent brain-injury and cell models. No human efficacy data.</div></div>
+<div class="ebar"><div class="row"><span class="t">MOTS-C metabolism (mice)</span><span class="v">solid preclinical</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#312E81,#0891B2)"></div></div><div class="note">Real metabolic effects in mice; human data limited to correlations. No efficacy trials.</div></div>
+<div class="ebar"><div class="row"><span class="t">Stack extends healthspan/lifespan</span><span class="v">no data</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No animal lifespan study, no human trial of the combination — or of any member for longevity.</div></div>
 <div class="panel reveal"><h3>Three Peptides, Three Biological Angles</h3>
 <p>Each member is sold as covering a different &ldquo;hallmark of aging.&rdquo; These categories are <strong>conceptual</strong> &mdash; the evidence does not establish that stacking them produces additive or synergistic longevity benefits.</p>
 <div class="kv"><span class="k s">Epitalon · cellular aging</span><p>Ala-Glu-Asp-Gly. Proposed <strong>telomere&ndash;telomerase and pineal/circadian hypotheses</strong>: telomerase activation reported in cultured human fibroblasts (2003), plus claimed circadian/melatonin-axis effects. From the Russian <strong>bioregulator (Khavinson) lineage</strong>.</p></div>
@@ -622,71 +640,71 @@ mini-poll { display: block; }
 </div>
 
 <div class="diagram reveal"><svg viewBox="0 0 640 300" role="img" aria-label="Epitalon proposed telomere pathway">
-<text x="84" y="30" fill="#97a57f" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">EXTRACELLULAR</text>
-<circle cx="60" cy="150" r="8" fill="#2a3615" stroke="#fa4a63" stroke-width="2.5"/>
-<circle cx="84" cy="150" r="8" fill="#2a3615" stroke="#fa4a63" stroke-width="2.5"/>
-<circle cx="108" cy="150" r="8" fill="#2a3615" stroke="#fa4a63" stroke-width="2.5"/>
-<text x="84" y="132" fill="#fa4a63" font-size="11" font-weight="800" text-anchor="middle">EPITALON</text>
-<rect x="200" y="44" width="400" height="230" rx="18" fill="none" stroke="#fa4a63" stroke-width="2"/>
-<text x="585" y="72" fill="#97a57f" font-size="11" font-weight="800" text-anchor="end" letter-spacing="2">CELL</text>
-<circle cx="395" cy="159" r="88" fill="#19200d" stroke="#72b208" stroke-width="2"/>
-<text x="395" y="88" fill="#97a57f" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">NUCLEUS</text>
-<line x1="360" y1="130" x2="430" y2="172" stroke="#f4f9ed" stroke-width="4" stroke-linecap="round"/>
-<line x1="430" y1="130" x2="360" y2="172" stroke="#f4f9ed" stroke-width="4" stroke-linecap="round"/>
-<circle class="glow-pulse" cx="356" cy="126" r="5" fill="#fa4a63"/><circle class="glow-pulse" cx="434" cy="126" r="5" fill="#fa4a63"/>
-<circle class="glow-pulse" cx="356" cy="176" r="5" fill="#fa4a63"/><circle class="glow-pulse" cx="434" cy="176" r="5" fill="#fa4a63"/>
-<text x="395" y="112" fill="#fa4a63" font-size="10" font-weight="700" text-anchor="middle">telomere caps</text>
-<rect class="seqr2" x="337" y="196" width="116" height="42" rx="10" fill="#2a3615" stroke="#72b208" stroke-width="2"/>
-<text x="395" y="213" fill="#72b208" font-size="11" font-weight="800" text-anchor="middle">TELOMERASE</text>
-<text x="395" y="229" fill="#bdc9a9" font-size="10" font-weight="600" text-anchor="middle">reported in cells</text>
-<line x1="130" y1="150" x2="355" y2="150" stroke="#97a57f" stroke-width="2" class="flowseq"/>
-<circle r="6" fill="#fa4a63"><animateMotion dur="4s" repeatCount="indefinite" path="M130,150 L355,150"/></circle>
-<text x="242" y="196" fill="#97a57f" font-size="10" font-weight="600" text-anchor="middle">dashed = proposed route</text>
+<text x="84" y="30" fill="#7f88a5" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">EXTRACELLULAR</text>
+<circle cx="60" cy="150" r="8" fill="#151b36" stroke="#FDE047" stroke-width="2.5"/>
+<circle cx="84" cy="150" r="8" fill="#151b36" stroke="#FDE047" stroke-width="2.5"/>
+<circle cx="108" cy="150" r="8" fill="#151b36" stroke="#FDE047" stroke-width="2.5"/>
+<text x="84" y="132" fill="#FDE047" font-size="11" font-weight="800" text-anchor="middle">EPITALON</text>
+<rect x="200" y="44" width="400" height="230" rx="18" fill="none" stroke="#FDE047" stroke-width="2"/>
+<text x="585" y="72" fill="#7f88a5" font-size="11" font-weight="800" text-anchor="end" letter-spacing="2">CELL</text>
+<circle cx="395" cy="159" r="88" fill="#0d1020" stroke="#0891B2" stroke-width="2"/>
+<text x="395" y="88" fill="#7f88a5" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">NUCLEUS</text>
+<line x1="360" y1="130" x2="430" y2="172" stroke="#edf0f9" stroke-width="4" stroke-linecap="round"/>
+<line x1="430" y1="130" x2="360" y2="172" stroke="#edf0f9" stroke-width="4" stroke-linecap="round"/>
+<circle class="glow-pulse" cx="356" cy="126" r="5" fill="#FDE047"/><circle class="glow-pulse" cx="434" cy="126" r="5" fill="#FDE047"/>
+<circle class="glow-pulse" cx="356" cy="176" r="5" fill="#FDE047"/><circle class="glow-pulse" cx="434" cy="176" r="5" fill="#FDE047"/>
+<text x="395" y="112" fill="#FDE047" font-size="10" font-weight="700" text-anchor="middle">telomere caps</text>
+<rect class="seqr2" x="337" y="196" width="116" height="42" rx="10" fill="#151b36" stroke="#0891B2" stroke-width="2"/>
+<text x="395" y="213" fill="#0891B2" font-size="11" font-weight="800" text-anchor="middle">TELOMERASE</text>
+<text x="395" y="229" fill="#a9b1c9" font-size="10" font-weight="600" text-anchor="middle">reported in cells</text>
+<line x1="130" y1="150" x2="355" y2="150" stroke="#7f88a5" stroke-width="2" class="flowseq"/>
+<circle r="6" fill="#FDE047"><animateMotion dur="4s" repeatCount="indefinite" path="M130,150 L355,150"/></circle>
+<text x="242" y="196" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">dashed = proposed route</text>
 </svg><div class="cap">Epitalon&#39;s proposed telomere pathway: telomerase activity was reported in cultured cells. A peptide literally rebuilding chromosomes was not.</div></div>
 
 <div class="diagram reveal"><svg viewBox="0 0 640 300" role="img" aria-label="Pinealon proposed nuclear mechanism">
-<rect x="236" y="52" width="168" height="36" rx="10" fill="rgba(249,38,68,.08)" stroke="#f92644" stroke-width="1.5" stroke-dasharray="5 5"/>
-<text x="320" y="75" fill="#f92644" font-size="11" font-weight="800" text-anchor="middle">PROPOSED MECHANISM &mdash; UNVERIFIED</text>
-<text x="70" y="120" fill="#97a57f" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">EXTRACELLULAR</text>
-<circle cx="46" cy="160" r="8" fill="#2a3615" stroke="#72b208" stroke-width="2.5"/>
-<circle cx="70" cy="160" r="8" fill="#2a3615" stroke="#72b208" stroke-width="2.5"/>
-<circle cx="94" cy="160" r="8" fill="#2a3615" stroke="#72b208" stroke-width="2.5"/>
-<text x="70" y="142" fill="#72b208" font-size="11" font-weight="800" text-anchor="middle">PINEALON</text>
-<rect x="150" y="100" width="16" height="120" rx="8" fill="#52603a"/>
-<text x="158" y="246" fill="#97a57f" font-size="10" font-weight="700" text-anchor="middle">CELL MEMBRANE</text>
-<text x="298" y="246" fill="#97a57f" font-size="10" font-weight="700" text-anchor="middle">CYTOPLASM</text>
-<circle class="seqr1" cx="158" cy="160" r="14" fill="none" stroke="#72b208" stroke-width="2"/>
-<circle cx="420" cy="160" r="72" fill="#19200d" stroke="#72b208" stroke-width="2"/>
-<text x="420" y="104" fill="#97a57f" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">NUCLEUS</text>
-<rect class="seqr3" x="366" y="136" width="108" height="48" rx="10" fill="#2a3615" stroke="#72b208" stroke-width="2" stroke-dasharray="5 4"/>
-<text x="420" y="155" fill="#72b208" font-size="10" font-weight="800" text-anchor="middle">GENE EXPRESSION</text>
-<text x="420" y="170" fill="#bdc9a9" font-size="10" font-weight="600" text-anchor="middle">proposed</text>
-<line x1="110" y1="160" x2="500" y2="160" stroke="#f92644" stroke-width="2" stroke-dasharray="6 6" class="flowseq"/>
-<circle r="6" fill="#f92644"><animateMotion dur="5s" repeatCount="indefinite" path="M110,160 L500,160"/></circle>
-<text x="320" y="288" fill="#f92644" font-size="10" font-weight="700" text-anchor="middle">every step past cell entry is proposed</text>
+<rect x="236" y="52" width="168" height="36" rx="10" fill="rgba(251,191,36,.08)" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="320" y="75" fill="#fbbf24" font-size="11" font-weight="800" text-anchor="middle">PROPOSED MECHANISM &mdash; UNVERIFIED</text>
+<text x="70" y="120" fill="#7f88a5" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">EXTRACELLULAR</text>
+<circle cx="46" cy="160" r="8" fill="#151b36" stroke="#0891B2" stroke-width="2.5"/>
+<circle cx="70" cy="160" r="8" fill="#151b36" stroke="#0891B2" stroke-width="2.5"/>
+<circle cx="94" cy="160" r="8" fill="#151b36" stroke="#0891B2" stroke-width="2.5"/>
+<text x="70" y="142" fill="#0891B2" font-size="11" font-weight="800" text-anchor="middle">PINEALON</text>
+<rect x="150" y="100" width="16" height="120" rx="8" fill="#3a4160"/>
+<text x="158" y="246" fill="#7f88a5" font-size="10" font-weight="700" text-anchor="middle">CELL MEMBRANE</text>
+<text x="298" y="246" fill="#7f88a5" font-size="10" font-weight="700" text-anchor="middle">CYTOPLASM</text>
+<circle class="seqr1" cx="158" cy="160" r="14" fill="none" stroke="#0891B2" stroke-width="2"/>
+<circle cx="420" cy="160" r="72" fill="#0d1020" stroke="#0891B2" stroke-width="2"/>
+<text x="420" y="104" fill="#7f88a5" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">NUCLEUS</text>
+<rect class="seqr3" x="366" y="136" width="108" height="48" rx="10" fill="#151b36" stroke="#0891B2" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="420" y="155" fill="#0891B2" font-size="10" font-weight="800" text-anchor="middle">GENE EXPRESSION</text>
+<text x="420" y="170" fill="#a9b1c9" font-size="10" font-weight="600" text-anchor="middle">proposed</text>
+<line x1="110" y1="160" x2="500" y2="160" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 6" class="flowseq"/>
+<circle r="6" fill="#fbbf24"><animateMotion dur="5s" repeatCount="indefinite" path="M110,160 L500,160"/></circle>
+<text x="320" y="288" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">every step past cell entry is proposed</text>
 </svg><div class="cap">Pinealon&#39;s proposed nuclear route. Reviews note the lack of pharmacokinetic evidence that systemic Pinealon reaches human brain cells intact.</div></div>
 
 <div class="diagram reveal"><svg viewBox="0 0 640 300" role="img" aria-label="MOTS-C metabolic signaling">
-<text x="150" y="60" fill="#97a57f" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">MITOCHONDRION</text>
-<ellipse cx="150" cy="160" rx="100" ry="66" fill="#2a3615" stroke="#fa4a63" stroke-width="2"/>
-<path d="M100 130 q25 10 40 0 q25 -10 40 0 q25 10 40 0" fill="none" stroke="#fa4a63" stroke-width="2" opacity=".55"/>
-<path d="M100 165 q25 10 40 0 q25 -10 40 0 q25 10 40 0" fill="none" stroke="#fa4a63" stroke-width="2" opacity=".55"/>
-<path d="M100 195 q25 10 40 0 q25 -10 40 0 q25 10 40 0" fill="none" stroke="#fa4a63" stroke-width="2" opacity=".55"/>
-<text x="150" y="164" fill="#fa4a63" font-size="11" font-weight="800" text-anchor="middle">MOTS-C</text>
-<text x="150" y="181" fill="#bdc9a9" font-size="10" font-weight="600" text-anchor="middle">made here</text>
-<text x="470" y="60" fill="#97a57f" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">CYTOPLASM</text>
-<rect class="seqr1" x="400" y="118" width="140" height="52" rx="12" fill="#2a3615" stroke="#72b208" stroke-width="2"/>
-<text x="470" y="140" fill="#72b208" font-size="12" font-weight="800" text-anchor="middle">AMPK</text>
-<text x="470" y="157" fill="#bdc9a9" font-size="10" font-weight="600" text-anchor="middle">cell&#39;s energy sensor</text>
-<rect class="seqr2" x="400" y="200" width="140" height="34" rx="10" fill="none" stroke="#97a57f" stroke-width="1.5"/>
-<text x="470" y="222" fill="#bdc9a9" font-size="11" font-weight="700" text-anchor="middle">glucose uptake &#8593;</text>
-<rect class="seqr3" x="176" y="240" width="164" height="34" rx="10" fill="none" stroke="#97a57f" stroke-width="1.5"/>
-<text x="258" y="262" fill="#bdc9a9" font-size="11" font-weight="700" text-anchor="middle">metabolic stress response</text>
-<line x1="258" y1="160" x2="396" y2="150" stroke="#97a57f" stroke-width="2" class="flowseq2"/>
-<line x1="470" y1="170" x2="470" y2="200" stroke="#97a57f" stroke-width="2" class="flowseq2"/>
-<line x1="400" y1="144" x2="344" y2="240" stroke="#97a57f" stroke-width="2" class="flowseq3"/>
-<circle r="6" fill="#72b208"><animateMotion dur="4s" repeatCount="indefinite" path="M258,160 L396,150"/></circle>
-<text x="470" y="292" fill="#97a57f" font-size="10" font-weight="600" text-anchor="middle">solid = demonstrated in mice &middot; dashed = proposed</text>
+<text x="150" y="60" fill="#7f88a5" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">MITOCHONDRION</text>
+<ellipse cx="150" cy="160" rx="100" ry="66" fill="#151b36" stroke="#FDE047" stroke-width="2"/>
+<path d="M100 130 q25 10 40 0 q25 -10 40 0 q25 10 40 0" fill="none" stroke="#FDE047" stroke-width="2" opacity=".55"/>
+<path d="M100 165 q25 10 40 0 q25 -10 40 0 q25 10 40 0" fill="none" stroke="#FDE047" stroke-width="2" opacity=".55"/>
+<path d="M100 195 q25 10 40 0 q25 -10 40 0 q25 10 40 0" fill="none" stroke="#FDE047" stroke-width="2" opacity=".55"/>
+<text x="150" y="164" fill="#FDE047" font-size="11" font-weight="800" text-anchor="middle">MOTS-C</text>
+<text x="150" y="181" fill="#a9b1c9" font-size="10" font-weight="600" text-anchor="middle">made here</text>
+<text x="470" y="60" fill="#7f88a5" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="2">CYTOPLASM</text>
+<rect class="seqr1" x="400" y="118" width="140" height="52" rx="12" fill="#151b36" stroke="#0891B2" stroke-width="2"/>
+<text x="470" y="140" fill="#0891B2" font-size="12" font-weight="800" text-anchor="middle">AMPK</text>
+<text x="470" y="157" fill="#a9b1c9" font-size="10" font-weight="600" text-anchor="middle">cell&#39;s energy sensor</text>
+<rect class="seqr2" x="400" y="200" width="140" height="34" rx="10" fill="none" stroke="#7f88a5" stroke-width="1.5"/>
+<text x="470" y="222" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">glucose uptake &#8593;</text>
+<rect class="seqr3" x="176" y="240" width="164" height="34" rx="10" fill="none" stroke="#7f88a5" stroke-width="1.5"/>
+<text x="258" y="262" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">metabolic stress response</text>
+<line x1="258" y1="160" x2="396" y2="150" stroke="#7f88a5" stroke-width="2" class="flowseq2"/>
+<line x1="470" y1="170" x2="470" y2="200" stroke="#7f88a5" stroke-width="2" class="flowseq2"/>
+<line x1="400" y1="144" x2="344" y2="240" stroke="#7f88a5" stroke-width="2" class="flowseq3"/>
+<circle r="6" fill="#0891B2"><animateMotion dur="4s" repeatCount="indefinite" path="M258,160 L396,150"/></circle>
+<text x="470" y="292" fill="#7f88a5" font-size="10" font-weight="600" text-anchor="middle">solid = demonstrated in mice &middot; dashed = proposed</text>
 </svg><div class="cap">MOTS-C is made inside mitochondria; its proposed signaling runs in the cytoplasm. It is not a repair crew rebuilding mitochondria.</div></div>
 
 <div class="panel reveal"><h3>Why Stack Them?</h3>
@@ -698,38 +716,38 @@ mini-poll { display: block; }
 </div>
 
 <div class="diagram reveal"><svg viewBox="0 0 640 360" role="img" aria-label="Aging is not one pathway">
-<text x="320" y="28" fill="#f4f9ed" font-size="14" font-weight="800" text-anchor="middle">AGING IS NOT ONE PATHWAY</text>
+<text x="320" y="28" fill="#edf0f9" font-size="14" font-weight="800" text-anchor="middle">AGING IS NOT ONE PATHWAY</text>
 <g stroke-linecap="round" opacity=".85">
-<line x1="90" y1="104" x2="130" y2="232" stroke="#fa4a63" stroke-width="2" class="flowseq2"/>
-<line x1="245" y1="104" x2="150" y2="232" stroke="#fa4a63" stroke-width="2" class="flowseq2"/>
-<line x1="555" y1="104" x2="510" y2="232" stroke="#fa4a63" stroke-width="2" class="flowseq3"/>
-<line x1="168" y1="182" x2="330" y2="232" stroke="#72b208" stroke-width="2" class="flowseq"/>
-<line x1="323" y1="182" x2="350" y2="232" stroke="#72b208" stroke-width="2" class="flowseq"/>
+<line x1="90" y1="104" x2="130" y2="232" stroke="#FDE047" stroke-width="2" class="flowseq2"/>
+<line x1="245" y1="104" x2="150" y2="232" stroke="#FDE047" stroke-width="2" class="flowseq2"/>
+<line x1="555" y1="104" x2="510" y2="232" stroke="#FDE047" stroke-width="2" class="flowseq3"/>
+<line x1="168" y1="182" x2="330" y2="232" stroke="#0891B2" stroke-width="2" class="flowseq"/>
+<line x1="323" y1="182" x2="350" y2="232" stroke="#0891B2" stroke-width="2" class="flowseq"/>
 </g>
-<g font-size="10.5" font-weight="800" text-anchor="middle" fill="#bdc9a9">
-<rect x="20" y="46" width="140" height="58" rx="12" fill="#2a3615" stroke="#52603a" stroke-width="1.5"/>
+<g font-size="10.5" font-weight="800" text-anchor="middle" fill="#a9b1c9">
+<rect x="20" y="46" width="140" height="58" rx="12" fill="#151b36" stroke="#3a4160" stroke-width="1.5"/>
 <text x="90" y="70">MITOCHONDRIAL</text><text x="90" y="86">DYSFUNCTION</text>
-<rect x="175" y="46" width="140" height="58" rx="12" fill="#2a3615" stroke="#52603a" stroke-width="1.5"/>
+<rect x="175" y="46" width="140" height="58" rx="12" fill="#151b36" stroke="#3a4160" stroke-width="1.5"/>
 <text x="245" y="70">METABOLIC</text><text x="245" y="86">DYSFUNCTION</text>
-<rect x="330" y="46" width="140" height="58" rx="12" fill="#2a3615" stroke="#52603a" stroke-width="1.5"/>
+<rect x="330" y="46" width="140" height="58" rx="12" fill="#151b36" stroke="#3a4160" stroke-width="1.5"/>
 <text x="400" y="70">CELLULAR</text><text x="400" y="86">SENESCENCE</text>
-<rect x="485" y="46" width="140" height="58" rx="12" fill="#2a3615" stroke="#52603a" stroke-width="1.5"/>
+<rect x="485" y="46" width="140" height="58" rx="12" fill="#151b36" stroke="#3a4160" stroke-width="1.5"/>
 <text x="555" y="70">GENOMIC</text><text x="555" y="86">INSTABILITY</text>
-<rect x="98" y="124" width="140" height="58" rx="12" fill="#2a3615" stroke="#52603a" stroke-width="1.5"/>
+<rect x="98" y="124" width="140" height="58" rx="12" fill="#151b36" stroke="#3a4160" stroke-width="1.5"/>
 <text x="168" y="148">ALTERED CELL</text><text x="168" y="164">SIGNALING</text>
-<rect x="253" y="124" width="140" height="58" rx="12" fill="#2a3615" stroke="#52603a" stroke-width="1.5"/>
+<rect x="253" y="124" width="140" height="58" rx="12" fill="#151b36" stroke="#3a4160" stroke-width="1.5"/>
 <text x="323" y="148">INFLAMMATION</text>
-<rect x="408" y="124" width="140" height="58" rx="12" fill="#2a3615" stroke="#52603a" stroke-width="1.5"/>
+<rect x="408" y="124" width="140" height="58" rx="12" fill="#151b36" stroke="#3a4160" stroke-width="1.5"/>
 <text x="478" y="148">DECLINING TISSUE</text><text x="478" y="164">FUNCTION</text>
 </g>
-<rect x="75" y="232" width="110" height="36" rx="10" fill="rgba(250,74,99,.08)" stroke="#fa4a63" stroke-width="1.5" stroke-dasharray="5 4"/>
-<text x="130" y="255" fill="#fa4a63" font-size="11" font-weight="800" text-anchor="middle">MOTS-C</text>
-<rect x="275" y="232" width="110" height="36" rx="10" fill="rgba(114,178,8,.08)" stroke="#72b208" stroke-width="1.5" stroke-dasharray="5 4"/>
-<text x="330" y="255" fill="#72b208" font-size="11" font-weight="800" text-anchor="middle">PINEALON</text>
-<rect x="455" y="232" width="110" height="36" rx="10" fill="rgba(250,74,99,.08)" stroke="#fa4a63" stroke-width="1.5" stroke-dasharray="5 4"/>
-<text x="510" y="255" fill="#fa4a63" font-size="11" font-weight="800" text-anchor="middle">EPITALON</text>
-<text x="320" y="300" fill="#97a57f" font-size="10.5" font-weight="600" text-anchor="middle">dashed = proposed influence &middot; evidence preliminary or mechanistic</text>
-<text x="320" y="320" fill="#97a57f" font-size="10.5" font-weight="600" text-anchor="middle">no compound&#39;s dashed line reaches &ldquo;aging reversed&rdquo;</text>
+<rect x="75" y="232" width="110" height="36" rx="10" fill="rgba(253,224,71,.08)" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="130" y="255" fill="#FDE047" font-size="11" font-weight="800" text-anchor="middle">MOTS-C</text>
+<rect x="275" y="232" width="110" height="36" rx="10" fill="rgba(8,145,178,.08)" stroke="#0891B2" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="330" y="255" fill="#0891B2" font-size="11" font-weight="800" text-anchor="middle">PINEALON</text>
+<rect x="455" y="232" width="110" height="36" rx="10" fill="rgba(253,224,71,.08)" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="510" y="255" fill="#FDE047" font-size="11" font-weight="800" text-anchor="middle">EPITALON</text>
+<text x="320" y="300" fill="#7f88a5" font-size="10.5" font-weight="600" text-anchor="middle">dashed = proposed influence &middot; evidence preliminary or mechanistic</text>
+<text x="320" y="320" fill="#7f88a5" font-size="10.5" font-weight="600" text-anchor="middle">no compound&#39;s dashed line reaches &ldquo;aging reversed&rdquo;</text>
 </svg><div class="cap">Seven hallmark systems, three proposed touchpoints. Every connection is a hypothesis, not a demonstrated outcome.</div></div>
 </section>
 
@@ -748,11 +766,11 @@ mini-poll { display: block; }
 <div class="card org reveal"><h3>The mouse-to-human gap</h3><p>MOTS-C's mouse metabolism data is the strongest file here — and <strong>most mouse longevity findings never translate</strong>. Pinealon's file is thinner still.</p></div>
 </div>
 <div class="panel reveal"><h3>The evidence ladder &mdash; where each compound actually stands</h3>
-<div class="ebar reveal"><div class="row"><span class="t">Cellular / molecular research</span><span class="v">all three</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#72b208,#fa4a63)"></div></div><div class="note">Epitalon&#39;s 2003 telomerase report, Pinealon&#39;s cell models, MOTS-C&#39;s molecular work.</div></div>
-<div class="ebar reveal"><div class="row"><span class="t">Animal studies</span><span class="v">all three</span></div><div class="track"><div class="fill" style="--w:40%;background:linear-gradient(90deg,#72b208,#fa4a63)"></div></div><div class="note">MOTS-C&#39;s mouse metabolism data is the strongest file; Pinealon&#39;s animal neuroprotection is thinner.</div></div>
-<div class="ebar reveal"><div class="row"><span class="t">Human studies</span><span class="v">small, old</span></div><div class="track"><div class="fill" style="--w:10%;background:linear-gradient(90deg,#72b208,#fa4a63)"></div></div><div class="note">Small historical human reports exist for Epitalon &mdash; not modern, not replicated at scale.</div></div>
-<div class="ebar reveal"><div class="row"><span class="t">Controlled clinical evidence</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:2%;background:linear-gradient(90deg,#52603a,#52603a)"></div></div><div class="note">No randomized trials of any member for longevity &mdash; or of the stack.</div></div>
-<div class="ebar reveal"><div class="row"><span class="t">Regulatory status</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:2%;background:linear-gradient(90deg,#52603a,#52603a)"></div></div><div class="note">No approved longevity use for any of them, anywhere.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Cellular / molecular research</span><span class="v">all three</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#0891B2,#FDE047)"></div></div><div class="note">Epitalon&#39;s 2003 telomerase report, Pinealon&#39;s cell models, MOTS-C&#39;s molecular work.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Animal studies</span><span class="v">all three</span></div><div class="track"><div class="fill" style="--w:40%;background:linear-gradient(90deg,#0891B2,#FDE047)"></div></div><div class="note">MOTS-C&#39;s mouse metabolism data is the strongest file; Pinealon&#39;s animal neuroprotection is thinner.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Human studies</span><span class="v">small, old</span></div><div class="track"><div class="fill" style="--w:10%;background:linear-gradient(90deg,#0891B2,#FDE047)"></div></div><div class="note">Small historical human reports exist for Epitalon &mdash; not modern, not replicated at scale.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Controlled clinical evidence</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:2%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No randomized trials of any member for longevity &mdash; or of the stack.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Regulatory status</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:2%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No approved longevity use for any of them, anywhere.</div></div>
 </div>
 
 <div class="duo">
@@ -893,18 +911,18 @@ mini-poll { display: block; }
   <h2>Understanding <span class="hl">Longevity</span> Terminology</h2>
   <p class="lede">Twelve terms, each with a scientific definition and a plain-English translation. Tap any term to expand it.</p>
 <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M24 6v30M14 12l20 24M34 12L14 36" fill="none" stroke="#fa4a63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Epitalon</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Epitalon is a synthetic tetrapeptide (Ala-Glu-Asp-Gly) modeled on epithalamin, a preparation derived from the pineal gland. It comes from Vladimir Khavinson's Russian bioregulator research program. In a 2003 cell-culture study it was reported to activate telomerase in cultured human somatic cells — the single finding that anchors its longevity reputation. Effects on telomeres, aging, or lifespan in whole organisms remain unproven.</p><div class="plain"><span class="plabel">Plain English</span>Epitalon is a lab-made four-part peptide copied from a pineal-gland extract, born out of Russia's bioregulator research program. Its entire longevity fame rests on one 2003 study where it switched on telomerase — the chromosome-repair enzyme — in cells growing in a dish. That is genuinely interesting, but a cell-culture result is a long way from slowing aging in a living person. Everything about Epitalon beyond that one study is extrapolation, not evidence.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><circle cx="24" cy="24" r="14" fill="none" stroke="#72b208" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#72b208"/></svg><span class="term">Pinealon</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Pinealon is a synthetic tripeptide (Glu-Asp-Arg) from the same Russian bioregulator program as Epitalon. It has been studied in animal models for neuroprotective effects, including protection of neurons under stress conditions. Human data are minimal, and its mechanism of action is officially labeled as proposed and unverified within this infographic. It is best understood as an experimental neuroprotective candidate with thin human evidence.</p><div class="plain"><span class="plabel">Plain English</span>Pinealon is a lab-made three-part peptide from the same Russian research program as Epitalon, aimed at the brain rather than the telomeres. In animal studies it has shown signs of protecting neurons under stress — but that is where the evidence stops. There is barely any human data, and even its proposed mechanism is officially labeled unverified in this infographic. Of the stack's three peptides, it is the one with the thinnest file.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M12 36l8-18 6 10 4-6 6 14z" fill="none" stroke="#62812e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">MOTS-C</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>MOTS-C is a 16-amino-acid peptide encoded within the mitochondrial 12S rRNA gene — an unusual case of mitochondrial DNA moonlighting as a peptide factory. It activates AMPK, the cell's master energy sensor, shifting metabolism toward fuel-burning and mimicking aspects of exercise and fasting at the cellular level. In mice it has demonstrated resistance to diet-induced obesity and improved insulin sensitivity. No human efficacy data exist.</p><div class="plain"><span class="plabel">Plain English</span>MOTS-C is a 16-link peptide whose recipe is hidden inside mitochondrial DNA — the power plant's own genetic code pulling double duty. Once released, it flips on AMPK, the cell's low-battery switch, making cells burn fuel the way they do during exercise or fasting. In mice, the results were striking: resistance to obesity and better blood-sugar control. But mice are not people, and there is zero human efficacy data — that is the whole story in one sentence.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M10 24h8l3-8 4 16 3-8h10" fill="none" stroke="#fa4a63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Telomeres</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Telomeres are repetitive DNA sequences — TTAGGG repeated thousands of times in humans — that cap the ends of chromosomes. They protect the genetic code from damage during cell division, but a small section is lost with each division. When telomeres become critically short, the cell enters senescence or self-destructs. This progressive shortening is one of the best-established molecular correlates of aging.</p><div class="plain"><span class="plabel">Plain English</span>Think of telomeres as the plastic tips on shoelaces, but for your chromosomes — they keep the DNA ends from fraying. Every time a cell divides, the tips get a little shorter, like a candle burning down. When they get too short, the cell either retires permanently or triggers its own death. Of all the aging mechanisms scientists argue about, this shortening is one of the most solidly documented.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><path d="M14 8h20v10l-5 5v13a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V23l-5-5z" fill="none" stroke="#72b208" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Telomerase</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Telomerase is a ribonucleoprotein enzyme that adds telomeric repeats back onto chromosome ends, counteracting telomere shortening. It is naturally active in stem cells, germ cells, and certain immune cells that must divide many times. It is also active in the large majority of cancers, which use it to divide without limit. This is why activating telomerase broadly is a double-edged idea: the same mechanism that preserves healthy cells can sustain malignant ones.</p><div class="plain"><span class="plabel">Plain English</span>Telomerase is the enzyme that rebuilds the chromosome tips — the repair crew that tops up the candle. Stem cells and reproductive cells use it naturally because they need to divide a lot. The problem: most cancers hijack the very same enzyme to keep dividing forever. So the idea of switching telomerase on to slow aging comes with an obvious shadow — the same switch that keeps cells young is one cancer relies on.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M24 8c7 0 12 5 12 12 0 9-12 20-12 20S12 29 12 20c0-7 5-12 12-12z" fill="none" stroke="#62812e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Bioregulator</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Bioregulator is the term used by Vladimir Khavinson's Russian research program for short synthetic peptides — typically two to four amino acids — claimed to regulate specific tissues or organs. Dozens were developed, each assigned to a target such as the pineal gland, brain, or immune system. It describes a research tradition and product lineage, not a recognized pharmacological drug class. Epitalon and Pinealon both come from this lineage.</p><div class="plain"><span class="plabel">Plain English</span>Bioregulator is Russia's word for a whole school of research that made tiny peptides — two to four amino acids each — and assigned each one a target organ: one for the brain, one for the immune system, and so on. Think of it as a research tradition with its own catalog, not a drug category that regulators anywhere recognize. Both Epitalon and Pinealon are products of this lineage. Whether the ‘one peptide per organ’ idea holds up scientifically is still an open question.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M8 16h32M8 24h32M8 32h20" fill="none" stroke="#fa4a63" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">AMPK</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>AMP-activated protein kinase is a heterotrimeric enzyme that serves as the cell's master energy sensor. It is activated when cellular energy runs low — a rising AMP-to-ATP ratio — and responds by switching metabolism toward fuel-burning while suppressing energy-expensive growth pathways. Exercise, fasting, and the diabetes drug metformin all activate AMPK. MOTS-C's proposed metabolic pathway runs through this same switch.</p><div class="plain"><span class="plabel">Plain English</span>AMPK is your cells' low-battery mode. When energy runs short, this enzyme flips the cell from ‘build and store’ to ‘burn fuel and conserve’ — it is the master switch behind that shift. Exercise turns it on, fasting turns it on, and the diabetes drug metformin works partly through it. MOTS-C is interesting precisely because it flips this same well-known switch. It is not a new pathway — it is a new finger on an old button.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><path d="M18 10h12v28H18zM18 18h12M18 26h12" fill="none" stroke="#72b208" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Hallmarks of aging</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The hallmarks of aging are a 2013 framework, proposed by López-Otín and colleagues, cataloging the molecular mechanisms of aging: genomic instability, telomere attrition, epigenetic alterations, loss of proteostasis, mitochondrial dysfunction, cellular senescence, and others. The framework gives researchers a shared map of what goes wrong with age. In marketing, the same list doubles as a sales menu — each hallmark becomes a pitch for a different intervention.</p><div class="plain"><span class="plabel">Plain English</span>In 2013, a group of scientists published a landmark paper listing the core ways our bodies break down with age — DNA damage, telomere shortening, worn-out mitochondria, and cells that stop dividing but refuse to die. It was meant as a research roadmap. But supplement marketers grabbed the same list and turned it into a sales menu: one hallmark, one product. This stack was essentially assembled from that brochure — one peptide per hallmark.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M24 6l14 8v16l-14 8-14-8V14z" fill="none" stroke="#62812e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="22" r="3.5" fill="#62812e"/></svg><span class="term">Healthspan</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Healthspan is the number of years a person lives in good health, free of serious disease and disability. It is distinct from lifespan, the total number of years lived. Extending lifespan without extending healthspan means more years of illness — the outcome nobody wants. Healthspan is the honest goal of longevity research, and it is harder to move with any intervention than raw lifespan.</p><div class="plain"><span class="plabel">Plain English</span>Healthspan means the years you spend healthy — not just alive, but actually well. It is different from lifespan, which just counts total years. Nobody wants an extra decade of being sick; the real prize is more good years, not just more years. That is why serious longevity researchers talk about healthspan first. And it is the harder target: keeping someone healthy is tougher than just keeping them alive.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M10 30c3-9 8-14 14-14s11 5 14 14M24 16v18" fill="none" stroke="#fa4a63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Biological age clocks</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Biological age clocks are algorithms that estimate a person's ‘age’ from biomarkers or patterns of DNA methylation, most famously the Horvath clock. They can correlate with health outcomes at the population level. But they are noisy at the individual level and have not been validated as measures of whether a specific intervention actually slows aging. Consumer tests based on them function more as report cards with shaky grading than as medical instruments.</p><div class="plain"><span class="plabel">Plain English</span>Biological age clocks are tests that spit out a number — ‘your body is 42’ — based on blood markers or chemical tags on your DNA. At the population level they track real trends, which is why scientists take them seriously as research tools. But for one person trying one supplement, they are noisy and unproven: the number can swing for reasons that have nothing to do with aging. They are the theater props of longevity anecdotes — dramatic, but not reliable evidence that anything worked.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><circle cx="17" cy="17" r="7" fill="none" stroke="#72b208" stroke-width="2.5"/><path d="M22 22l12 12" stroke="#72b208" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Unfalsifiable</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>An unfalsifiable claim is one structured so that no possible observation could disprove it — for example, ‘this peptide slows aging, but you will never be able to tell.’ Because it cannot be tested, it sits outside the scientific method entirely. Falsifiability is the line that separates science from marketing. Longevity products lean on unfalsifiable claims because aging is slow and individual, making failure invisible.</p><div class="plain"><span class="plabel">Plain English</span>An unfalsifiable claim is one you can never prove wrong — like ‘this peptide slows your aging, but you would never notice.’ If nothing could ever disprove it, then nothing can prove it either; it is just words. Being testable — falsifiable — is the minimum entry ticket for science. Longevity products love unfalsifiable promises precisely because aging takes decades: by the time you would know, nobody is checking.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M24 8v32M12 14l24 20M36 14L12 34" fill="none" stroke="#62812e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Survivorship bias</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Survivorship bias is the logical error of drawing conclusions from only the visible successes while the failures quietly disappear from view. In online communities, people who feel great on a stack post enthusiastically; those who feel nothing, or feel worse, tend to stop posting. The forum then looks far more positive than the underlying reality. It is one of the most common distortions in anecdotal evidence.</p><div class="plain"><span class="plabel">Plain English</span>Survivorship bias means counting the winners while the losers go silent. On any forum, the people who feel amazing on a stack write long glowing posts — the disappointed ones just quietly stop posting. Read the forum and you would think almost everyone benefits; the quitters are invisible. It is the single biggest reason online anecdotes look better than reality.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M24 6v30M14 12l20 24M34 12L14 36" fill="none" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Epitalon</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Epitalon is a synthetic tetrapeptide (Ala-Glu-Asp-Gly) modeled on epithalamin, a preparation derived from the pineal gland. It comes from Vladimir Khavinson's Russian bioregulator research program. In a 2003 cell-culture study it was reported to activate telomerase in cultured human somatic cells — the single finding that anchors its longevity reputation. Effects on telomeres, aging, or lifespan in whole organisms remain unproven.</p><div class="plain"><span class="plabel">Plain English</span>Epitalon is a lab-made four-part peptide copied from a pineal-gland extract, born out of Russia's bioregulator research program. Its entire longevity fame rests on one 2003 study where it switched on telomerase — the chromosome-repair enzyme — in cells growing in a dish. That is genuinely interesting, but a cell-culture result is a long way from slowing aging in a living person. Everything about Epitalon beyond that one study is extrapolation, not evidence.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><circle cx="24" cy="24" r="14" fill="none" stroke="#0891B2" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#0891B2"/></svg><span class="term">Pinealon</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Pinealon is a synthetic tripeptide (Glu-Asp-Arg) from the same Russian bioregulator program as Epitalon. It has been studied in animal models for neuroprotective effects, including protection of neurons under stress conditions. Human data are minimal, and its mechanism of action is officially labeled as proposed and unverified within this infographic. It is best understood as an experimental neuroprotective candidate with thin human evidence.</p><div class="plain"><span class="plabel">Plain English</span>Pinealon is a lab-made three-part peptide from the same Russian research program as Epitalon, aimed at the brain rather than the telomeres. In animal studies it has shown signs of protecting neurons under stress — but that is where the evidence stops. There is barely any human data, and even its proposed mechanism is officially labeled unverified in this infographic. Of the stack's three peptides, it is the one with the thinnest file.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M12 36l8-18 6 10 4-6 6 14z" fill="none" stroke="#312E81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">MOTS-C</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>MOTS-C is a 16-amino-acid peptide encoded within the mitochondrial 12S rRNA gene — an unusual case of mitochondrial DNA moonlighting as a peptide factory. It activates AMPK, the cell's master energy sensor, shifting metabolism toward fuel-burning and mimicking aspects of exercise and fasting at the cellular level. In mice it has demonstrated resistance to diet-induced obesity and improved insulin sensitivity. No human efficacy data exist.</p><div class="plain"><span class="plabel">Plain English</span>MOTS-C is a 16-link peptide whose recipe is hidden inside mitochondrial DNA — the power plant's own genetic code pulling double duty. Once released, it flips on AMPK, the cell's low-battery switch, making cells burn fuel the way they do during exercise or fasting. In mice, the results were striking: resistance to obesity and better blood-sugar control. But mice are not people, and there is zero human efficacy data — that is the whole story in one sentence.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M10 24h8l3-8 4 16 3-8h10" fill="none" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Telomeres</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Telomeres are repetitive DNA sequences — TTAGGG repeated thousands of times in humans — that cap the ends of chromosomes. They protect the genetic code from damage during cell division, but a small section is lost with each division. When telomeres become critically short, the cell enters senescence or self-destructs. This progressive shortening is one of the best-established molecular correlates of aging.</p><div class="plain"><span class="plabel">Plain English</span>Think of telomeres as the plastic tips on shoelaces, but for your chromosomes — they keep the DNA ends from fraying. Every time a cell divides, the tips get a little shorter, like a candle burning down. When they get too short, the cell either retires permanently or triggers its own death. Of all the aging mechanisms scientists argue about, this shortening is one of the most solidly documented.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><path d="M14 8h20v10l-5 5v13a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V23l-5-5z" fill="none" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Telomerase</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Telomerase is a ribonucleoprotein enzyme that adds telomeric repeats back onto chromosome ends, counteracting telomere shortening. It is naturally active in stem cells, germ cells, and certain immune cells that must divide many times. It is also active in the large majority of cancers, which use it to divide without limit. This is why activating telomerase broadly is a double-edged idea: the same mechanism that preserves healthy cells can sustain malignant ones.</p><div class="plain"><span class="plabel">Plain English</span>Telomerase is the enzyme that rebuilds the chromosome tips — the repair crew that tops up the candle. Stem cells and reproductive cells use it naturally because they need to divide a lot. The problem: most cancers hijack the very same enzyme to keep dividing forever. So the idea of switching telomerase on to slow aging comes with an obvious shadow — the same switch that keeps cells young is one cancer relies on.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M24 8c7 0 12 5 12 12 0 9-12 20-12 20S12 29 12 20c0-7 5-12 12-12z" fill="none" stroke="#312E81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Bioregulator</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Bioregulator is the term used by Vladimir Khavinson's Russian research program for short synthetic peptides — typically two to four amino acids — claimed to regulate specific tissues or organs. Dozens were developed, each assigned to a target such as the pineal gland, brain, or immune system. It describes a research tradition and product lineage, not a recognized pharmacological drug class. Epitalon and Pinealon both come from this lineage.</p><div class="plain"><span class="plabel">Plain English</span>Bioregulator is Russia's word for a whole school of research that made tiny peptides — two to four amino acids each — and assigned each one a target organ: one for the brain, one for the immune system, and so on. Think of it as a research tradition with its own catalog, not a drug category that regulators anywhere recognize. Both Epitalon and Pinealon are products of this lineage. Whether the ‘one peptide per organ’ idea holds up scientifically is still an open question.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M8 16h32M8 24h32M8 32h20" fill="none" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">AMPK</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>AMP-activated protein kinase is a heterotrimeric enzyme that serves as the cell's master energy sensor. It is activated when cellular energy runs low — a rising AMP-to-ATP ratio — and responds by switching metabolism toward fuel-burning while suppressing energy-expensive growth pathways. Exercise, fasting, and the diabetes drug metformin all activate AMPK. MOTS-C's proposed metabolic pathway runs through this same switch.</p><div class="plain"><span class="plabel">Plain English</span>AMPK is your cells' low-battery mode. When energy runs short, this enzyme flips the cell from ‘build and store’ to ‘burn fuel and conserve’ — it is the master switch behind that shift. Exercise turns it on, fasting turns it on, and the diabetes drug metformin works partly through it. MOTS-C is interesting precisely because it flips this same well-known switch. It is not a new pathway — it is a new finger on an old button.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><path d="M18 10h12v28H18zM18 18h12M18 26h12" fill="none" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Hallmarks of aging</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The hallmarks of aging are a 2013 framework, proposed by López-Otín and colleagues, cataloging the molecular mechanisms of aging: genomic instability, telomere attrition, epigenetic alterations, loss of proteostasis, mitochondrial dysfunction, cellular senescence, and others. The framework gives researchers a shared map of what goes wrong with age. In marketing, the same list doubles as a sales menu — each hallmark becomes a pitch for a different intervention.</p><div class="plain"><span class="plabel">Plain English</span>In 2013, a group of scientists published a landmark paper listing the core ways our bodies break down with age — DNA damage, telomere shortening, worn-out mitochondria, and cells that stop dividing but refuse to die. It was meant as a research roadmap. But supplement marketers grabbed the same list and turned it into a sales menu: one hallmark, one product. This stack was essentially assembled from that brochure — one peptide per hallmark.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M24 6l14 8v16l-14 8-14-8V14z" fill="none" stroke="#312E81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="22" r="3.5" fill="#312E81"/></svg><span class="term">Healthspan</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Healthspan is the number of years a person lives in good health, free of serious disease and disability. It is distinct from lifespan, the total number of years lived. Extending lifespan without extending healthspan means more years of illness — the outcome nobody wants. Healthspan is the honest goal of longevity research, and it is harder to move with any intervention than raw lifespan.</p><div class="plain"><span class="plabel">Plain English</span>Healthspan means the years you spend healthy — not just alive, but actually well. It is different from lifespan, which just counts total years. Nobody wants an extra decade of being sick; the real prize is more good years, not just more years. That is why serious longevity researchers talk about healthspan first. And it is the harder target: keeping someone healthy is tougher than just keeping them alive.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE04722"/><path d="M10 30c3-9 8-14 14-14s11 5 14 14M24 16v18" fill="none" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Biological age clocks</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Biological age clocks are algorithms that estimate a person's ‘age’ from biomarkers or patterns of DNA methylation, most famously the Horvath clock. They can correlate with health outcomes at the population level. But they are noisy at the individual level and have not been validated as measures of whether a specific intervention actually slows aging. Consumer tests based on them function more as report cards with shaky grading than as medical instruments.</p><div class="plain"><span class="plabel">Plain English</span>Biological age clocks are tests that spit out a number — ‘your body is 42’ — based on blood markers or chemical tags on your DNA. At the population level they track real trends, which is why scientists take them seriously as research tools. But for one person trying one supplement, they are noisy and unproven: the number can swing for reasons that have nothing to do with aging. They are the theater props of longevity anecdotes — dramatic, but not reliable evidence that anything worked.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0891B222"/><circle cx="17" cy="17" r="7" fill="none" stroke="#0891B2" stroke-width="2.5"/><path d="M22 22l12 12" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Unfalsifiable</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>An unfalsifiable claim is one structured so that no possible observation could disprove it — for example, ‘this peptide slows aging, but you will never be able to tell.’ Because it cannot be tested, it sits outside the scientific method entirely. Falsifiability is the line that separates science from marketing. Longevity products lean on unfalsifiable claims because aging is slow and individual, making failure invisible.</p><div class="plain"><span class="plabel">Plain English</span>An unfalsifiable claim is one you can never prove wrong — like ‘this peptide slows your aging, but you would never notice.’ If nothing could ever disprove it, then nothing can prove it either; it is just words. Being testable — falsifiable — is the minimum entry ticket for science. Longevity products love unfalsifiable promises precisely because aging takes decades: by the time you would know, nobody is checking.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312E8122"/><path d="M24 8v32M12 14l24 20M36 14L12 34" fill="none" stroke="#312E81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Survivorship bias</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Survivorship bias is the logical error of drawing conclusions from only the visible successes while the failures quietly disappear from view. In online communities, people who feel great on a stack post enthusiastically; those who feel nothing, or feel worse, tend to stop posting. The forum then looks far more positive than the underlying reality. It is one of the most common distortions in anecdotal evidence.</p><div class="plain"><span class="plabel">Plain English</span>Survivorship bias means counting the winners while the losers go silent. On any forum, the people who feel amazing on a stack write long glowing posts — the disappointed ones just quietly stop posting. Read the forum and you would think almost everyone benefits; the quitters are invisible. It is the single biggest reason online anecdotes look better than reality.</div></div></div>
 </div>
 </section>
 <mini-poll slug="stack-longevity-mini-ch8"
@@ -975,7 +993,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#fa4a63","#72b208","#fa4a63","#62812e","#72b208","#fa4a63"];
+  var colors=["#FDE047","#0891B2","#FDE047","#312E81","#0891B2","#FDE047"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -1105,7 +1123,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#fa4a63","#72b208","#62812e","#f92644","#f4f9ed"],parts=[];
+  var cols=["#FDE047","#0891B2","#312E81","#fbbf24","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1141,7 +1159,7 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#fa4a63", "#72b208", "#62812e", "#9cc952", "#497305", "#f92644", "#c3f472", "#a1ee22"] };
+  accents: ["#FDE047", "#0891B2", "#312E81", "#52b2c9", "#055e73", "#fbbf24", "#f472b6", "#22d3ee"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies. See component docs for usage. */
@@ -1212,8 +1230,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fb7689', '#a3e635', '#fa3d58', '#d0fa8b', '#c3f472',
-                 '#a3e635', '#f92644', '#fb7185', '#a1ee22'];
+                ['#fdba74', '#a3e635', '#fb923c', '#a78bfa', '#f472b6',
+                 '#a3e635', '#fbbf24', '#fb7185', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
@@ -1562,6 +1580,55 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
   window.MiniPoll = { version: '1.5.1' };
 })();
 
+</script>
+
+<script>
+/* ambient SVG dot starfield: transform-only motion, theme-aware palettes */
+(function(){
+  const svg=document.getElementById('bg-dots-svg'); if(!svg) return;
+  const NS='http://www.w3.org/2000/svg';
+  const REDUCED=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DARK=['#fbbf24','#FDE047','#fde68a','#0891B2','#22d3ee','#fb7185'];
+  const LIGHT=['#b45309','#a16207','#92600a','#056880','#0e7490','#e11d48'];
+  let W=0,H=0,dots=[],raf=null;
+  const pal=()=>document.documentElement.getAttribute('data-theme')==='light'?LIGHT:DARK;
+  function build(){
+    W=innerWidth;H=innerHeight;
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);
+    svg.innerHTML='';dots=[];
+    const P=pal();
+    const n=Math.max(120,Math.min(180,Math.floor(W*H/7200)));
+    for(let i=0;i<n;i++){
+      const c=document.createElementNS(NS,'circle');
+      const r=1.4+Math.random()*2.2, o=.30+Math.random()*.35;
+      c.setAttribute('r',r.toFixed(2));
+      c.setAttribute('fill',P[i%P.length]);
+      c.setAttribute('opacity',o.toFixed(2));
+      c.setAttribute('transform','translate('+(Math.random()*W).toFixed(1)+' '+(Math.random()*H).toFixed(1)+')');
+      svg.appendChild(c);
+      dots.push({el:c,x:Math.random()*W,y:Math.random()*H,
+        vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,
+        o:o,ph:Math.random()*6.283,sp:.5+Math.random()*1.5});
+    }
+  }
+  function frame(ts){
+    const t=ts/1000;
+    for(const d of dots){
+      d.x=(d.x+d.vx+W)%W; d.y=(d.y+d.vy+H)%H;
+      const tw=.55+.45*Math.sin(t*d.sp+d.ph);
+      d.el.setAttribute('transform','translate('+d.x.toFixed(1)+' '+d.y.toFixed(1)+')');
+      d.el.setAttribute('opacity',(d.o*tw).toFixed(3));
+    }
+    raf=requestAnimationFrame(frame);
+  }
+  function start(){ if(!REDUCED&&raf===null&&!document.hidden) raf=requestAnimationFrame(frame); }
+  function stop(){ if(raf!==null){cancelAnimationFrame(raf);raf=null;} }
+  document.addEventListener('visibilitychange',()=>{ document.hidden?stop():start(); });
+  addEventListener('resize',()=>{ build(); });
+  new MutationObserver(()=>{ const P=pal(); dots.forEach((d,i)=>d.el.setAttribute('fill',P[i%P.length])); })
+    .observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  build(); start();
+})();
 </script>
 </body>
 </html>
